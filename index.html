@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail Desktop Clone</title>
+    <link rel="stylesheet" href="/build/Font assets/css/solid.css" />
+    <link rel="stylesheet" href="/build/Font assets/css/brands.css" />
+    <link rel="stylesheet" href="/build/Font assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="/build/css/style.css" />
+  </head>
+  <body class="flex min-h-screen px-4">
+    <!-- far left items list -->
+    <!-- No margin whatsoever should be added inside the this section -->
+    <section class="w-20 bg-gray-500/20 text-gray-800">
+      <div class="flex flex-col items-center justify-center">
+        <button class="font1 m-8 font-bold">&#9776;</button>
+
+        <div
+          class="relative w-3/5 cursor-pointer flex-col p-1 hover:rounded-2xl"
+        >
+          <div
+            class="flex justify-center p-1 hover:rounded-2xl hover:bg-blue-500/20"
+          >
+            <img
+              src="/build/image/icons8-mail-48.png"
+              alt="mail"
+              width="25"
+              class="max-w-fit"
+            />
+          </div>
+          <div
+            class="font2 absolute right-0 top-0 rounded-2xl bg-red-700 px-1 pt-1 text-center text-white"
+          >
+            99+
+          </div>
+          <p class="font3 text-center font-bold">Mail</p>
+        </div>
+
+        <div
+          class="relative w-3/5 cursor-pointer flex-col p-1 hover:rounded-2xl"
+        >
+          <div
+            class="flex justify-center p-1 hover:rounded-2xl hover:bg-blue-500/20"
+          >
+            <img
+              src="/build/image/icons8-topic-64.png"
+              alt="mail"
+              width="25"
+              class="max-w-fit"
+            />
+          </div>
+          <div
+            class="font2 absolute right-0 top-0 rounded-2xl bg-red-700 px-1 text-center text-white"
+          >
+            1
+          </div>
+          <p class="font3 text-center font-bold">Chat</p>
+        </div>
+
+        <div class="w-3/5 cursor-pointer flex-col p-1 hover:rounded-2xl">
+          <div
+            class="flex justify-center p-1 hover:rounded-2xl hover:bg-blue-500/20"
+          >
+            <img
+              src="/build/image/icons8-leaving-queue-64.png"
+              alt="mail"
+              width="25"
+              class="max-w-fit"
+            />
+          </div>
+          <p class="font3 text-center font-bold">Spaces</p>
+        </div>
+
+        <div class="w-3/5 cursor-pointer flex-col p-1 hover:rounded-2xl">
+          <div
+            class="flex justify-center p-1 hover:rounded-2xl hover:bg-blue-500/20"
+          >
+            <img
+              src="/build/image/icons8-documentary-100.png"
+              alt="mail"
+              width="25"
+              class="max-w-fit"
+            />
+          </div>
+          <p class="font3 text-center font-bold">Meet</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 layer-left items list -->
+    <!-- No margin whatsoever should be added inside the this section -->
+    <section class="w-80 bg-gray-700/5 text-sm">
+      <div class="m-8 mx-8 flex flex-col">
+        <div class="flex">
+          <img
+            src="/build/image/gmail.png"
+            alt="gmail logo"
+            width="40"
+            class="max-w-fit"
+          />
+          <p class="font4 mx-4 flex items-center text-left">Gmail</p>
+        </div>
+
+        <div
+          class="mt-6 flex w-3/5 py-2 text-black hover:rounded-2xl hover:bg-blue-500/20"
+        >
+          <div class="flex pt-2">
+            <img
+              src="/build/image/icons8-pencil-48.png"
+              alt="pencil"
+              width="25"
+              class="max-w-fit font-bold"
+            />
+            <p class="mx-6 font-bold">Compose</p>
+          </div>
+        </div>
+
+        <div
+          class="mt-4 flex p-1 font-bold text-gray-600 hover:rounded-xl hover:bg-blue-500/20"
+        >
+          <div class="group">
+            <div class="relative flex w-60 overflow-hidden">
+              <img
+                src="/build/image/icons8-inbox-48.png"
+                alt="inbox"
+                width="20"
+                class="max-w-fit"
+              />
+              <p class="mx-6">Inbox</p>
+              <div
+                class="absolute -bottom-0 flex h-full w-full justify-end text-black opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100"
+              >
+                6,391
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-2 flex p-1 font-bold text-gray-600 hover:rounded-xl hover:bg-blue-500/20"
+        >
+          <div class="group">
+            <div class="relative flex w-60 overflow-hidden">
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="max-w-fit"
+              />
+              <p class="mx-6">Starred</p>
+              <div
+                class="absolute -bottom-0 flex h-full w-full justify-end text-black opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100"
+              >
+                52
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-2 flex p-1 font-bold text-gray-600 hover:rounded-xl hover:bg-blue-500/20"
+        >
+          <div class="group">
+            <div class="relative flex w-60 overflow-hidden">
+              <img
+                src="/build/image/icons8-clock-100.png"
+                alt="snoozed"
+                width="20"
+                class="max-w-fit"
+              />
+              <p class="mx-6">Snoozed</p>
+              <div
+                class="absolute -bottom-0 flex h-full w-full justify-end text-black opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100"
+              >
+                5
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-2 flex p-1 font-bold text-gray-600 hover:rounded-xl hover:bg-blue-500/20"
+        >
+          <div class="group">
+            <div class="relative flex w-60 overflow-hidden">
+              <img
+                src="/build/image/icons8-sent-50.png"
+                alt="inbox"
+                width="20"
+                class="max-w-fit"
+              />
+              <p class="mx-6">Sent</p>
+              <div
+                class="absolute -bottom-0 flex h-full w-full justify-end text-black opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100"
+              >
+                502
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-2 flex p-1 font-bold text-gray-600 hover:rounded-xl hover:bg-blue-500/20"
+        >
+          <div class="group">
+            <div class="relative flex w-60 overflow-hidden">
+              <img
+                src="/build/image/icons8-hot-article-48.png"
+                alt="inbox"
+                width="20"
+                class="max-w-fit"
+              />
+              <p class="mx-6">Draft</p>
+              <div
+                class="absolute -bottom-0 flex h-full w-full justify-end text-black opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100"
+              >
+                26
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mx-1 mt-2 flex p-1 font-bold text-gray-600 hover:rounded-xl hover:bg-blue-500/20"
+        >
+          <div><i class="fa-solid fa-angle-down"></i></div>
+
+          <p class="mx-7">More</p>
+        </div>
+
+        <div class="text-md mt-8 flex justify-between font-bold text-black">
+          <p>Lables</p>
+          <p>+</p>
+        </div>
+
+        <div
+          class="mt-2 flex p-1 font-bold text-gray-600 hover:rounded-xl hover:bg-blue-500/20"
+        >
+          <div class="group">
+            <div class="relative flex w-60 overflow-hidden">
+              <img
+                src="/build/image/icons8-east-48 (1).png"
+                alt="inbox"
+                width="20"
+                class="max-w-fit"
+              />
+              <p class="mx-6">[Imap]/Trash</p>
+              <div
+                class="absolute -bottom-0 flex h-full w-full justify-end text-black opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100"
+              >
+                28
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main body message  list -->
+    <!-- No margin whatsoever should be added inside the this section -->
+    <section class="w1 justify-end bg-gray-700/5">
+      <div class="mt-8 flex justify-between">
+        <div class="w-6/12">
+          <form action="" method="get" class="relative">
+            <input
+              type="search"
+              name="search"
+              for=" text"
+              class="w-full rounded-md bg-gray-500/10 px-10 py-2 outline-none placeholder:text-sm placeholder:font-semibold"
+              placeholder="Search all conversation "
+            />
+
+            <div class="">
+              <i
+                class="fa-solid fa-search absolute top-3 ml-2 flex text-sm text-black"
+              >
+                <img
+                  src="/build/image/icons8-slider-48.png"
+                  alt="filter"
+                  width="20"
+                  class="left absolute max-w-fit"
+              /></i>
+            </div>
+          </form>
+        </div>
+
+        <div class="flex items-center justify-end space-x-7">
+          <div class="rounded-xl border border-gray-400 px-3 pt-1 text-sm">
+            <i class="fa-solid fa-circle text-gray-600"></i>
+            <span>Away</span>
+            <i class="fa-solid fa-caret-down text-gray-600"></i>
+          </div>
+
+          <div class="h-6 w-6 rounded-3xl border-2 border-gray-600 text-center">
+            ?
+          </div>
+          <div>
+            <img
+              src="/build/image/icons8-settings-50.png"
+              alt="settings"
+              width="25"
+            />
+          </div>
+
+          <div>
+            <img
+              src="/build/image/icons8-squared-menu-48.png"
+              alt="grid"
+              width="25"
+            />
+          </div>
+
+          <i class="fa-solid fa-circle font1 text-gray-600"></i>
+        </div>
+      </div>
+
+      <article class="flex">
+        <section class="w2 mt-4 rounded-3xl bg-white">
+          <div class="flex justify-between">
+            <div class="m-4 mx-6 flex items-center">
+              <div>
+                <img
+                  src="/build/image/icons8-square-spinner-50.png"
+                  alt="square box"
+                  width="17"
+                  class="mx-2 max-h-fit cursor-pointer hover:bg-blue-500/20"
+                />
+              </div>
+              <span
+                ><i
+                  class="fa-solid fa-caret-down cursor-pointer text-sm hover:bg-blue-500/20"
+                ></i
+              ></span>
+              <div>
+                <img
+                  src="/build/image/icons8-restart-48.png"
+                  alt="retry"
+                  width="17"
+                  class="mx-6 max-h-fit cursor-pointer hover:bg-blue-500/20"
+                />
+              </div>
+              <div>
+                <img
+                  src="/build/image/icons8-menu-vertical-48.png"
+                  alt="retry"
+                  width="17"
+                  class="mx-2 max-h-fit cursor-pointer hover:bg-blue-500/20"
+                />
+              </div>
+            </div>
+
+            <div class="m-4 mx-6 flex items-center">
+              <div class="mx-2 cursor-pointer text-xs">1-50 of 7,786</div>
+              <span
+                ><i
+                  class="fa-solid fa-angle-left mx-2 cursor-pointer text-xs text-gray-400 hover:bg-blue-500/20"
+                ></i
+              ></span>
+              <span
+                ><i
+                  class="fa-solid fa-angle-right mx-6 cursor-pointer text-xs text-black hover:bg-blue-500/20"
+                ></i
+              ></span>
+              <span
+                ><i
+                  class="fa-solid fa-keyboard mx-2 cursor-pointer text-sm text-black hover:bg-blue-500/20"
+                ></i
+              ></span>
+              <span
+                ><i
+                  class="fa-solid fa-caret-down cursor-pointer text-sm text-black hover:bg-blue-500/20"
+                ></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="m-4 mx-7 flex items-center">
+            <div
+              class="flex w-72 items-center hover:border-b-4 hover:border-blue-700"
+            >
+              <div>
+                <img
+                  src="/build/image/icons8-inbox-48.png"
+                  alt="inbox2"
+                  width="20"
+                />
+              </div>
+              <span class="mx-4 font-semibold text-blue-800">Primary</span>
+            </div>
+
+            <div
+              class="relative flex w-72 items-center hover:border-b-4 hover:border-emerald-700"
+            >
+              <div>
+                <img
+                  src="/build/image/icons8-price-tag-50.png"
+                  alt="inbox2"
+                  width="20"
+                />
+              </div>
+              <span class="mx-4 font-semibold"
+                >Promotions
+                <span
+                  class="absolute left-32 top-0 rounded-xl bg-emerald-700 px-2 text-sm text-white"
+                  >1 new</span
+                >
+                <div class="text-xs text-gray-400">
+                  Mentioned by Iannis Mouzas
+                </div>
+              </span>
+            </div>
+
+            <div
+              class="relative flex w-72 items-center hover:border-b-4 hover:border-red-700"
+            >
+              <div>
+                <img
+                  src="/build/image/icons8-people-48.png"
+                  alt="inbox2"
+                  width="20"
+                />
+              </div>
+              <span class="mx-4 font-semibold"
+                >Social
+                <span
+                  class="absolute left-32 top-0 rounded-xl bg-red-700 px-2 text-sm text-white"
+                  >48 new</span
+                >
+                <div class="text-xs text-gray-500">
+                  Linkedin, Goodreads, Oba...
+                </div>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Twitter</div>
+
+            <div class="w3 font-bold">
+              New login to Twitter from Chrome Desktop Windows -
+              <span class="ml-2 font-light text-gray-500"
+                >We noticed a login to your account @sleekpenny from a new
+                device. Wasthis you?...</span
+              >
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>9:28AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">no-reply</div>
+
+            <div class="w3 font-bold">
+              Password changed -
+              <span class="ml-2 font-light text-gray-500">
+                Your password has been changed. your passowrd has been changed,
+                as you asked. If you didn't ask to change you passw...
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>9:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Eyitayo O</div>
+
+            <div class="w3 font-bold">
+              2Hours Hands on Practical Session on Getting into Tech -
+              <span class="ml-2 font-light text-gray-500">
+                Learn a tech skill for free.
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>9:00AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Dave Lavinsky</div>
+
+            <div class="w3 font-bold">
+              The Secret To Building a $10 Million Business -
+              <span class="ml-2 font-light text-gray-500">
+                See the shocking image that exposes how entrepreneurs think
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>8:54AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">AliExpress</div>
+
+            <div class="w3 font-bold">
+              To pair with what you purchased -
+              <span class="ml-2 font-light text-gray-500">
+                We've got these picks for you
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>8:44AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">
+              Linkedin Job Alerts
+            </div>
+
+            <div class="w3 font-bold">
+              "chemical engineer" roles: 7 new jobs -
+              <span class="ml-2 font-light text-gray-500">
+                Process Engineer, Integrations (Remote Positions Available) and
+                other roles are available
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>6:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Spotify</div>
+
+            <div class="w3 font-bold">
+              Reset -
+              <span class="ml-2 font-light text-gray-500">
+                Reset your password - Hello, No need to wory, you can reset our
+                Spotify password by clicking the linnk below. Reset ypassword
+                Your username...
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Freelancer.com</div>
+
+            <div class="w3 font-bold">
+              New activity in Freelancer Onboarding -
+              <span class="ml-2 font-light text-gray-500">
+                Freelancer New activity in Freelancer Onboarding Penny S. made a
+                new post Penny Sleekies...</span
+              >
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">no-reply</div>
+
+            <div class="w3 font-bold">
+              Password changed -
+              <span class="ml-2 font-light text-gray-500">
+                Your password has been changed. your passowrd has been changed,
+                as you asked. If you didn't ask to change you passw...
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>9:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Eyitayo O</div>
+
+            <div class="w3 font-bold">
+              2Hours Hands on Practical Session on Getting into Tech -
+              <span class="ml-2 font-light text-gray-500">
+                Learn a tech skill for free.
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>9:00AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Dave Lavinsky</div>
+
+            <div class="w3 font-bold">
+              The Secret To Building a $10 Million Business -
+              <span class="ml-2 font-light text-gray-500">
+                See the shocking image that exposes how entrepreneurs think
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>8:54AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">AliExpress</div>
+
+            <div class="w3 font-bold">
+              To pair with what you purchased -
+              <span class="ml-2 font-light text-gray-500">
+                We've got these picks for you
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>8:44AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">
+              Linkedin Job Alerts
+            </div>
+
+            <div class="w3 font-bold">
+              "chemical engineer" roles: 7 new jobs -
+              <span class="ml-2 font-light text-gray-500">
+                Process Engineer, Integrations (Remote Positions Available) and
+                other roles are available
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>6:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Spotify</div>
+
+            <div class="w3 font-bold">
+              Reset -
+              <span class="ml-2 font-light text-gray-500">
+                Reset your password - Hello, No need to wory, you can reset our
+                Spotify password by clicking the linnk below. Reset ypassword
+                Your username...
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Freelancer.com</div>
+
+            <div class="w3 font-bold">
+              New activity in Freelancer Onboarding -
+              <span class="ml-2 font-light text-gray-500">
+                Freelancer New activity in Freelancer Onboarding Penny S. made a
+                new post Penny Sleekies...</span
+              >
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Spotify</div>
+
+            <div class="w3 font-bold">
+              Reset -
+              <span class="ml-2 font-light text-gray-500">
+                Reset your password - Hello, No need to wory, you can reset our
+                Spotify password by clicking the linnk below. Reset ypassword
+                Your username...
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Freelancer.com</div>
+
+            <div class="w3 font-bold">
+              New activity in Freelancer Onboarding -
+              <span class="ml-2 font-light text-gray-500">
+                Freelancer New activity in Freelancer Onboarding Penny S. made a
+                new post Penny Sleekies...</span
+              >
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Freelancer.com</div>
+
+            <div class="w3 font-bold">
+              New activity in Freelancer Onboarding -
+              <span class="ml-2 font-light text-gray-500">
+                Freelancer New activity in Freelancer Onboarding Penny S. made a
+                new post Penny Sleekies...</span
+              >
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Spotify</div>
+
+            <div class="w3 font-bold">
+              Reset -
+              <span class="ml-2 font-light text-gray-500">
+                Reset your password - Hello, No need to wory, you can reset our
+                Spotify password by clicking the linnk below. Reset ypassword
+                Your username...
+              </span>
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+
+          <div
+            class="m-2 mx-7 flex cursor-pointer items-center p-1 hover:border-t hover:shadow-md"
+          >
+            <div>
+              <img
+                src="/build/image/icons8-square-spinner-50.png"
+                alt="inbox2"
+                width="17"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icons8-star-64.png"
+                alt="Starred"
+                width="20"
+                class="ml-4 max-w-fit"
+              />
+            </div>
+            <div class="ml-4 w-56 font-bold text-black">Freelancer.com</div>
+
+            <div class="w3 font-bold">
+              New activity in Freelancer Onboarding -
+              <span class="ml-2 font-light text-gray-500">
+                Freelancer New activity in Freelancer Onboarding Penny S. made a
+                new post Penny Sleekies...</span
+              >
+            </div>
+
+            <div class="ml-6 flex items-center space-x-3 font-bold">
+              <div>3:02AM</div>
+              <i class="fa-solid fa-trash"></i>
+              <i class="fa-solid fa-recycle"></i>
+              <i class="fa-solid fa-reply"></i>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-2 w-14">
+          <div class="mt-4 flex flex-col items-end space-y-12">
+            <div>
+              <img
+                src="/build/image/Google_Calendar_icon_(2020).svg.png"
+                alt="google calender"
+                width="25"
+                class="max-w-fit cursor-pointer"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/Google_Ads_logo.svg.png"
+                alt="google calender"
+                width="25"
+                class="max-w-fit cursor-pointer"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/2000px-Blogger_icon.svg.png"
+                alt="google calender"
+                width="25"
+                class="max-w-fit cursor-pointer"
+              />
+            </div>
+            <div>
+              <img
+                src="/build/image/icon_2020q4_128.png"
+                alt="google calender"
+                width="25"
+                class="max-w-fit cursor-pointer"
+              />
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+  </body>
+</html>
